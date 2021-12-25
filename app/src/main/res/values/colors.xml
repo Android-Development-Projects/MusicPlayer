@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    //shrine pink
+    //primary
+    <color name="Shrine_Pink_200">#ffc2ae</color>
+    <color name="Shrine_Pink_500">#ff814f</color>
+    <color name="Shrine_Pink_700">#ff7244</color>
+    //secondary
+    <color name="grayish_red_900">#442C2E</color>
+
+    //replay
+    //blue
+    //primary
+    <color name="Replay_Blue_50">#e8f0f6</color>
+    <color name="Replay_Blue_100">#cbdae1</color>
+    <color name="Replay_Blue_200">#adc0cb</color>
+    <color name="Replay_Blue_500">#5d7f92</color>
+    <color name="Replay_Blue_700">#425c6a</color>
+    //orange
+    //secondary
+    <color name="Replay_Orange">#F9AA36</color>
+    //Dark
+    <color name="Replay_Dark">#232f34</color>
+
+</resources>

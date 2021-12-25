@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <string name="music_home_page">Music</string>
+    <string name="music_search_online_page">Search</string>
+    <string name="music_library_page">Library</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_text">Search</string>
+    <string name="search_here_text">Search Here</string>
+    <string name="todo">TODO</string>
+</resources>
