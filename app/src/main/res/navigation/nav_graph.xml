@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/musicHomeFragment">
+
+    <fragment
+        android:id="@+id/musicHomeFragment"
+        android:name="com.abdulhaseeb.musicplayer.presentation.ui.fragments.MusicHomeFragment"
+        android:label="Music"
+        tools:layout="@layout/fragment_music_home" />
+    <fragment
+        android:id="@+id/searchMusicFragment"
+        android:name="com.abdulhaseeb.musicplayer.presentation.ui.fragments.SearchMusicFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search_music" />
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.abdulhaseeb.musicplayer.presentation.ui.fragments.LibraryFragment"
+        android:label="Library"
+        tools:layout="@layout/fragment_library" />
+</navigation>
