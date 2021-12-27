@@ -18,6 +18,7 @@
         app:cardBackgroundColor="@color/Replay_Blue_200"
         app:cardCornerRadius="50dp"
         app:cardElevation="0dp"
+        android:layout_margin="3dp"
        >
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

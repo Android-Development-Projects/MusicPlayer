@@ -8,4 +8,10 @@
     <string name="search_text">Search</string>
     <string name="search_here_text">Search Here</string>
     <string name="todo">TODO</string>
+    <string name="song_name">Song Name</string>
+    <string name="artist_name">artist name</string>
+    <string name="minus">-</string>
+    <string name="album_name">Album Name</string>
+    <string name="songs_thumbnail">Songs Thumbnail</string>
+    <string name="btn_allow_permission_text">Allow Permissions!</string>
 </resources>

@@ -1,5 +1,5 @@
 package com.abdulhaseeb.musicplayer.utils
 
 object Constants {
-    val TAG = "check"
+    const val TAG = "check"
 }

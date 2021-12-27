@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.abdulhaseeb.musicplayer.R
 import com.abdulhaseeb.musicplayer.databinding.ActivityMainBinding
@@ -16,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+       supportActionBar?.hide()
+
         val bottomNavigationView = binding.bottomNavigationView
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragments) as NavHostFragment
         val navController = navHostFragment.navController
@@ -27,5 +30,6 @@ class MainActivity : AppCompatActivity() {
                 R.id.libraryFragment
             ))
         bottomNavigationView.setupWithNavController(navController)
+        setupActionBarWithNavController(navController,appBarConfiguration)
     }
 }

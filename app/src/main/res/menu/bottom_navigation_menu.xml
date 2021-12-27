@@ -3,18 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/music_HomePage"
+        android:id="@+id/musicHomeFragment"
         android:enabled="true"
         android:icon="@drawable/ic_music"
         android:title="@string/music_home_page"
         />
     <item
-        android:id="@+id/music_SearchPage"
+        android:id="@+id/searchMusicFragment"
         android:icon="@drawable/ic_search"
         android:title="@string/music_search_online_page"
         />
     <item
-        android:id="@+id/music_LibraryPage"
+        android:id="@+id/libraryFragment"
         android:icon="@drawable/ic_library"
         android:title="@string/music_library_page"
 
