@@ -14,4 +14,6 @@
     <string name="album_name">Album Name</string>
     <string name="songs_thumbnail">Songs Thumbnail</string>
     <string name="btn_allow_permission_text">Allow Permissions!</string>
+    <string name="thumbnail_of_the_song_which_is_playing">Thumbnail of the song which is playing.</string>
+    <string name="button_which_minimize_the_playing_song_screen">Button which minimize the playing song screen.</string>
 </resources>

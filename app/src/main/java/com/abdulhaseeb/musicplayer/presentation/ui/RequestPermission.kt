@@ -11,7 +11,7 @@ import androidx.core.app.ActivityCompat
 import androidx.fragment.app.FragmentActivity
 import com.abdulhaseeb.musicplayer.utils.Constants.TAG
 
-class RequestPermissionClass() {
+class RequestPermissionClass {
     fun requestPermission(
         requestPermissionLauncher: ActivityResultLauncher<String>,
         requireActivity: FragmentActivity,

@@ -9,7 +9,11 @@
         android:id="@+id/musicHomeFragment"
         android:name="com.abdulhaseeb.musicplayer.presentation.ui.fragments.MusicHomeFragment"
         android:label="Music"
-        tools:layout="@layout/fragment_music_home" />
+        tools:layout="@layout/fragment_music_home" >
+        <action
+            android:id="@+id/action_musicHomeFragment_to_playingAudio"
+            app:destination="@id/playingAudio" />
+    </fragment>
     <fragment
         android:id="@+id/searchMusicFragment"
         android:name="com.abdulhaseeb.musicplayer.presentation.ui.fragments.SearchMusicFragment"
@@ -20,4 +24,13 @@
         android:name="com.abdulhaseeb.musicplayer.presentation.ui.fragments.LibraryFragment"
         android:label="Library"
         tools:layout="@layout/fragment_library" />
+    <dialog
+        android:id="@+id/playingAudio"
+        android:name="com.abdulhaseeb.musicplayer.presentation.ui.fragments.PlayingAudio"
+        android:label="fragment_playing_audio"
+        tools:layout="@layout/fragment_playing_audio" >
+        <action
+            android:id="@+id/action_playingAudio_to_musicHomeFragment"
+            app:destination="@id/musicHomeFragment" />
+    </dialog>
 </navigation>

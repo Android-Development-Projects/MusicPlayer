@@ -6,14 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import com.abdulhaseeb.musicplayer.R
 import com.abdulhaseeb.musicplayer.databinding.FragmentLibraryBinding
 import com.abdulhaseeb.musicplayer.presentation.ui.RequestPermissionClass
-import android.Manifest.permission.*
-import android.content.pm.PackageManager
-
 
 class LibraryFragment : Fragment(R.layout.fragment_library) {
     private val requestPermissionLauncher = registerForActivityResult(

@@ -4,13 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/drawable/bottom_nav_icon_color.xml" value="0.1" />
+        <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.16525096525096525" />
         <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/drawable/ic_music.xml" value="0.1527777777777778" />
+        <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/drawable/ic_round_equalizer_24.xml" value="0.16525096525096525" />
+        <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/drawable/ic_round_music.xml" value="0.16525096525096525" />
+        <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/drawable/ic_search.xml" value="0.16525096525096525" />
+        <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/drawable/ic_shuffle.xml" value="0.16525096525096525" />
+        <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/drawable/ic_skip_next.xml" value="0.16525096525096525" />
+        <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/drawable/playing_audio_shape.xml" value="0.16525096525096525" />
         <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/layout/fragment_library.xml" value="0.12704918032786885" />
         <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/layout/fragment_music_home.xml" value="0.12" />
+        <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/layout/fragment_playing_audio.xml" value="0.33" />
         <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/layout/fragment_search_music.xml" value="0.12704918032786885" />
-        <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/layout/item_songs_layout.xml" value="0.45371428571428574" />
-        <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/layout/top_app_bar.xml" value="0.22" />
+        <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/layout/item_songs_layout.xml" value="0.5" />
+        <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/layout/playing_audio.xml" value="0.1" />
+        <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/layout/top_app_bar.xml" value="0.5" />
         <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
         <entry key="..\:/#Study/Projects/AndroidProjects/MusicPlayer/app/src/main/res/menu/top_app_bar_menu.xml" value="0.22" />
       </map>

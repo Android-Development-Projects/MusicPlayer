@@ -14,11 +14,10 @@ import com.abdulhaseeb.musicplayer.repository.data.AudioData
 
 @RequiresApi(Build.VERSION_CODES.Q)
 class MainViewModel(
-    val context: Application
+    private val context: Application
 ) : AndroidViewModel(context) {
 
     val _getAllAudioList = MutableLiveData<List<AudioData>>()
-
 
     init {
          val audioRepo: AudioRepo = AudioRepo(context)

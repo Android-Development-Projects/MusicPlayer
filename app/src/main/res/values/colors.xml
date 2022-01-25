@@ -27,6 +27,7 @@
     //orange
     //secondary
     <color name="Replay_Orange">#F9AA36</color>
+    <color name="Replay_Orange_700">#fcc23e</color>
     //Dark
     <color name="Replay_Dark">#232f34</color>
 

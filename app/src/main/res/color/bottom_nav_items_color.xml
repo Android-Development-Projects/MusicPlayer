@@ -3,5 +3,5 @@
         <item
             android:state_checked="true"
             android:color="@color/Replay_Orange" />
-        <item android:color="@color/Replay_Blue_200"  />
+        <item android:color="@color/Replay_Blue_500"  />
 </selector>
