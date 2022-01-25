@@ -16,4 +16,5 @@
     <string name="btn_allow_permission_text">Allow Permissions!</string>
     <string name="thumbnail_of_the_song_which_is_playing">Thumbnail of the song which is playing.</string>
     <string name="button_which_minimize_the_playing_song_screen">Button which minimize the playing song screen.</string>
+    <string name="_00_00">00:00</string>
 </resources>
