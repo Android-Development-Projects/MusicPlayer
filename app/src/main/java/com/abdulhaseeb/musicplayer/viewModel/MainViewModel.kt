@@ -16,7 +16,6 @@ import com.abdulhaseeb.musicplayer.repository.data.AudioData
 class MainViewModel(
     private val context: Application
 ) : AndroidViewModel(context) {
-
     val _getAllAudioList = MutableLiveData<List<AudioData>>()
 
     init {

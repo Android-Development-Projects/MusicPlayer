@@ -23,7 +23,8 @@
         android:id="@+id/libraryFragment"
         android:name="com.abdulhaseeb.musicplayer.presentation.ui.fragments.LibraryFragment"
         android:label="Library"
-        tools:layout="@layout/fragment_library" />
+        tools:layout="@layout/fragment_library" >
+    </fragment>
     <dialog
         android:id="@+id/playingAudio"
         android:name="com.abdulhaseeb.musicplayer.presentation.ui.fragments.PlayingAudio"
@@ -32,5 +33,10 @@
         <action
             android:id="@+id/action_playingAudio_to_musicHomeFragment"
             app:destination="@id/musicHomeFragment" />
+        <argument
+            android:name="audioFile"
+            app:argType="com.abdulhaseeb.musicplayer.repository.data.AudioData"
+            app:nullable="true"
+            android:defaultValue="@null" />
     </dialog>
 </navigation>

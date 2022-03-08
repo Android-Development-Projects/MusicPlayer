@@ -7,7 +7,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.abdulhaseeb.musicplayer.R
-import com.abdulhaseeb.musicplayer.adapter.AudioListAdapter
 import com.abdulhaseeb.musicplayer.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -32,8 +31,5 @@ class MainActivity : AppCompatActivity() {
             ))
         bottomNavigationView.setupWithNavController(navController)
         setupActionBarWithNavController(navController,appBarConfiguration)
-
-
-
     }
 }

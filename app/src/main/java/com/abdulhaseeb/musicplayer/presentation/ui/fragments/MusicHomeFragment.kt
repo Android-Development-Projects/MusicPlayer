@@ -2,22 +2,19 @@ package com.abdulhaseeb.musicplayer.presentation.ui.fragments
 
 import android.Manifest
 import android.app.Application
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.provider.Settings
-import android.util.Log
 import android.view.View
-import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.abdulhaseeb.musicplayer.R
 import com.abdulhaseeb.musicplayer.adapter.AudioListAdapter
@@ -34,7 +31,8 @@ class MusicHomeFragment : Fragment(R.layout.fragment_music_home) {
             checkIfUserRequestedDontAskAgain()
         }
     }
-    private lateinit var viewModel : MainViewModel
+
+    private lateinit var viewModel: MainViewModel
     private val requestPermissionObj = RequestPermissionClass()
     private lateinit var binding: FragmentMusicHomeBinding
 
@@ -46,7 +44,7 @@ class MusicHomeFragment : Fragment(R.layout.fragment_music_home) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val context : Application
+        val context: Application
         binding = FragmentMusicHomeBinding.bind(view)
         binding.btnRequestPermission.visibility = View.INVISIBLE
         binding.btnRequestPermission.setOnClickListener {
@@ -56,26 +54,31 @@ class MusicHomeFragment : Fragment(R.layout.fragment_music_home) {
             startActivity(intent)
         }
 
-        if(ActivityCompat.checkSelfPermission(requireContext(),
+        if (ActivityCompat.checkSelfPermission(
+                requireContext(),
                 Manifest.permission.READ_EXTERNAL_STORAGE
-            )== PackageManager.PERMISSION_GRANTED
-        ){
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
             viewModel = ViewModelProvider(this)[MainViewModel::class.java]
             val audioList = viewModel._getAllAudioList
             observeData(audioList)
-        }else{
-            requestPermissionObj.requestPermission(requestPermissionLauncher,requireActivity(),requireContext())
+
+        } else {
+            requestPermissionObj.requestPermission(
+                requestPermissionLauncher,
+                requireActivity(),
+                requireContext()
+            )
         }
-
-
     }
 
     override fun onResume() {
         super.onResume()
-        if (ActivityCompat.checkSelfPermission(requireContext(),
+        if (ActivityCompat.checkSelfPermission(
+                requireContext(),
                 Manifest.permission.READ_EXTERNAL_STORAGE
             ) == PackageManager.PERMISSION_GRANTED
-        ){
+        ) {
             binding.btnRequestPermission.visibility = View.INVISIBLE
             viewModel = ViewModelProvider(this)[MainViewModel::class.java]
             observeData(viewModel._getAllAudioList)
@@ -86,28 +89,28 @@ class MusicHomeFragment : Fragment(R.layout.fragment_music_home) {
     private fun checkIfUserRequestedDontAskAgain() {
         val rationalFlagRead =
             shouldShowRequestPermissionRationale(Manifest.permission.READ_EXTERNAL_STORAGE)
-            if(!rationalFlagRead){
-                binding.btnRequestPermission.isVisible = true
-            }
+        if (!rationalFlagRead) {
+            binding.btnRequestPermission.isVisible = true
+        }
 
     }
 
     private fun observeData(audioList: MutableLiveData<List<AudioData>>) {
-        audioList.observe(viewLifecycleOwner, { audio_List ->
-            val audioAdapter = AudioListAdapter(audio_List)
+        audioList.observe(viewLifecycleOwner) { audio_List ->
+            val audioAdapter = AudioListAdapter(audio_List) {
+                onClick(it)
+            }
             binding.recyclerViewSongs.apply {
                 adapter = audioAdapter
                 layoutManager = LinearLayoutManager(requireContext())
-                audioAdapter.setOnItemClickListener(object : AudioListAdapter.onItemClickListener{
-                    override fun onItemClick(position: Int) {
-                        findNavController().navigate(R.id.action_musicHomeFragment_to_playingAudio)
-                    }
-                })
             }
-
-
-
-
-        })
+        }
     }
+
+    private fun onClick(audioData: AudioData) {
+        val action = MusicHomeFragmentDirections.actionMusicHomeFragmentToPlayingAudio(audioData)
+        findNavController().navigate(action)
+    }
+
+
 }

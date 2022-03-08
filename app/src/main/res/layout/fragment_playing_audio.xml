@@ -6,262 +6,284 @@
     android:layout_height="match_parent"
     tools:context=".presentation.ui.fragments.PlayingAudio">
 
-   <androidx.constraintlayout.widget.ConstraintLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:background="@drawable/playing_audio_shape">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/playing_audio_shape">
 
-      <androidx.constraintlayout.widget.Guideline
-          android:id="@+id/guideline3"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:orientation="horizontal"
-          app:layout_constraintGuide_percent="0.85" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.85" />
 
-      <ImageView
-          android:id="@+id/thumbnail_playingSong"
-          android:layout_width="0dp"
-          android:layout_height="0dp"
-          android:contentDescription="@string/thumbnail_of_the_song_which_is_playing"
-          android:padding="50dp"
-          android:scaleType="centerCrop"
-          android:src="@drawable/ic_round_music2"
-          app:layout_constraintBottom_toTopOf="@+id/guideline2"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="1.0"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toTopOf="parent"
-          app:layout_constraintVertical_bias="0.0" />
+        <ImageView
+            android:id="@+id/thumbnail_playingSong"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/thumbnail_of_the_song_which_is_playing"
+            android:padding="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_round_music2"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
-      <ImageView
-          android:id="@+id/thumbnail_playingSong2"
-          android:layout_width="0dp"
-          android:layout_height="0dp"
-          android:layout_margin="15dp"
-          android:contentDescription="@string/thumbnail_of_the_song_which_is_playing"
-          android:padding="50dp"
-          android:scaleType="centerCrop"
-          android:src="@drawable/ic_round_music"
-          app:layout_constraintBottom_toTopOf="@+id/guideline2"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="1.0"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toTopOf="parent"
-          app:layout_constraintVertical_bias="0.516" />
+        <ImageView
+            android:id="@+id/thumbnail_playingSong2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:contentDescription="@string/thumbnail_of_the_song_which_is_playing"
+            android:padding="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_round_music"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
 
-      <ImageView
-          android:id="@+id/imageView_minimizeBottomSheet"
-          android:layout_width="50dp"
-          android:layout_height="50dp"
-          android:contentDescription="@string/button_which_minimize_the_playing_song_screen"
-          android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
-          app:layout_constraintEnd_toStartOf="@+id/guideline4"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imageView_minimizeBottomSheet"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/button_which_minimize_the_playing_song_screen"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-      <androidx.constraintlayout.widget.Guideline
-          android:id="@+id/guideline4"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:orientation="vertical"
-          app:layout_constraintGuide_percent="0.15" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
 
-      <androidx.constraintlayout.widget.Guideline
-          android:id="@+id/guideline5"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:orientation="vertical"
-          app:layout_constraintGuide_percent="0.85" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
 
-      <androidx.constraintlayout.widget.Guideline
-          android:id="@+id/guideline2"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:orientation="horizontal"
-          app:layout_constraintGuide_percent="0.5" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
 
-      <SeekBar
-          android:id="@+id/seekBar_playingSong"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          app:layout_constraintEnd_toStartOf="@+id/tv_playingSongTotalTime"
-          app:layout_constraintStart_toEndOf="@+id/tv_currentPositionTime"
-          app:layout_constraintTop_toTopOf="@+id/guideline3" />
+        <SeekBar
+            android:id="@+id/seekBar_playingSong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/tv_playingSongTotalTime"
+            app:layout_constraintStart_toEndOf="@+id/tv_currentPositionTime"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
-      <TextView
-          android:id="@+id/tv_playingSongName"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="16dp"
-          android:text="Song Name"
-          android:textColor="@color/Replay_Blue_700"
-          android:textSize="20sp"
-          android:textStyle="bold"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/thumbnail_playingSong" />
+        <TextView
+            android:id="@+id/tv_playingSongName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:text="@string/song_name"
+            android:textColor="@color/Replay_Blue_700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thumbnail_playingSong" />
 
-      <TextView
-          android:id="@+id/tv_playingArtistName"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="4dp"
-          android:text="ArtistName"
-          android:textColor="@color/Replay_Blue_500"
-          app:layout_constraintEnd_toStartOf="@+id/tv_playingFolderName"
-          app:layout_constraintHorizontal_bias="0.5"
-          app:layout_constraintHorizontal_chainStyle="packed"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/tv_playingSongName" />
+        <TextView
+            android:id="@+id/tv_playingArtistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLength="35"
+            android:singleLine="true"
+            android:text="@string/artistName"
+            android:textColor="@color/Replay_Blue_500"
+            app:layout_constraintEnd_toStartOf="@+id/tv_playingFolderName"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_playingSongName" />
 
-      <TextView
-          android:id="@+id/tv_playingFolderName"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginStart="8dp"
-          android:text="Folder Name"
-          android:textColor="@color/Replay_Blue_500"
-          app:layout_constraintBottom_toBottomOf="@+id/tv_playingArtistName"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.5"
-          app:layout_constraintStart_toEndOf="@+id/tv_playingArtistName"
-          app:layout_constraintTop_toTopOf="@+id/tv_playingArtistName" />
+        <TextView
+            android:id="@+id/tv_playingFolderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:text="@string/folder_name"
+            android:textColor="@color/Replay_Blue_500"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_playingArtistName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_playingArtistName"
+            app:layout_constraintTop_toTopOf="@+id/tv_playingArtistName" />
 
-      <ImageView
-          android:id="@+id/imageView_shuffleAudios"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:src="@drawable/ic_shuffle"
-          app:layout_constraintBottom_toBottomOf="@+id/cv_previousSong"
-          app:layout_constraintEnd_toStartOf="@+id/guideline4"
-          app:layout_constraintTop_toTopOf="@+id/cv_previousSong" />
+        <ImageView
+            android:id="@+id/imageView_shuffleAudios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/shuffle_songs"
+            android:src="@drawable/ic_shuffle"
+            app:layout_constraintBottom_toBottomOf="@+id/cv_previousSong"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="@+id/cv_previousSong" />
 
-      <TextView
-          android:id="@+id/tv_currentPositionTime"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginStart="8dp"
-          android:text="@string/_00_00"
-          android:textColor="@color/Replay_Blue_700"
-          app:layout_constraintBottom_toBottomOf="@+id/seekBar_playingSong"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toTopOf="@+id/seekBar_playingSong" />
+        <TextView
+            android:id="@+id/tv_currentPositionTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/_00_00"
+            android:textColor="@color/Replay_Blue_700"
+            app:layout_constraintBottom_toBottomOf="@+id/seekBar_playingSong"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/seekBar_playingSong" />
 
-      <TextView
-          android:id="@+id/tv_playingSongTotalTime"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginEnd="8dp"
-          android:text="@string/_00_00"
-          android:textColor="@color/Replay_Blue_700"
-          app:layout_constraintBottom_toBottomOf="@+id/seekBar_playingSong"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintTop_toTopOf="@+id/seekBar_playingSong" />
+        <TextView
+            android:id="@+id/tv_playingSongTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/_00_00"
+            android:textColor="@color/Replay_Blue_700"
+            app:layout_constraintBottom_toBottomOf="@+id/seekBar_playingSong"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/seekBar_playingSong" />
 
-      <androidx.cardview.widget.CardView
-          android:id="@+id/cv_playPauseSong"
-          android:layout_width="50dp"
-          android:layout_height="50dp"
-          android:layout_marginTop="24dp"
-          android:layout_marginEnd="8dp"
-          android:layout_marginBottom="24dp"
-          android:elevation="0dp"
-          app:cardBackgroundColor="@color/Replay_Blue_700"
-          app:cardCornerRadius="50dp"
-          app:layout_constraintBottom_toBottomOf="parent"
-          app:layout_constraintEnd_toStartOf="@+id/cv_nextSong"
-          app:layout_constraintHorizontal_bias="0.5"
-          app:layout_constraintStart_toEndOf="@+id/cv_previousSong"
-          app:layout_constraintTop_toBottomOf="@+id/seekBar_playingSong">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_playPauseSong"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="0dp"
+            app:cardBackgroundColor="@color/Replay_Blue_700"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cv_nextSong"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cv_previousSong"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar_playingSong">
 
-         <androidx.constraintlayout.widget.ConstraintLayout
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:layout_margin="4dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp">
 
-            <ImageView
-                android:id="@+id/imageView_PlayPauseButton"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:padding="8dp"
-                android:src="@drawable/ic_play"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <ImageButton
+                    android:id="@+id/imageView_PlayPauseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/Replay_Blue_700"
+                    android:contentDescription="@string/play"
+                    android:src="@drawable/ic_play"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
-         </androidx.constraintlayout.widget.ConstraintLayout>
-      </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_previousSong"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="4dp"
+            android:elevation="0dp"
+            app:cardBackgroundColor="@color/Replay_Blue_700"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cv_playPauseSong"
+            app:layout_constraintEnd_toStartOf="@+id/cv_playPauseSong"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="@+id/cv_playPauseSong"
+            app:layout_constraintVertical_bias="0.466">
 
-      <androidx.cardview.widget.CardView
-          android:id="@+id/cv_previousSong"
-          android:layout_width="35dp"
-          android:layout_height="35dp"
-          android:layout_marginEnd="4dp"
-          android:elevation="0dp"
-          app:cardBackgroundColor="@color/Replay_Blue_700"
-          app:cardCornerRadius="50dp"
-          app:layout_constraintBottom_toBottomOf="@+id/cv_playPauseSong"
-          app:layout_constraintEnd_toStartOf="@+id/cv_playPauseSong"
-          app:layout_constraintHorizontal_bias="0.5"
-          app:layout_constraintHorizontal_chainStyle="spread"
-          app:layout_constraintStart_toEndOf="@+id/imageView6"
-          app:layout_constraintStart_toStartOf="@+id/guideline4"
-          app:layout_constraintTop_toTopOf="@+id/cv_playPauseSong"
-          app:layout_constraintVertical_bias="0.466">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp">
 
-         <androidx.constraintlayout.widget.ConstraintLayout
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:layout_margin="4dp">
+                <ImageView
+                    android:id="@+id/imageView_PreviousButton"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:contentDescription="@string/previous_audio"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_skip_previous"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/ic_skip_previous" />
 
-            <ImageView
-                android:id="@+id/imageView_PreviousButton"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:padding="4dp"
-                android:src="@drawable/ic_skip_previous"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@drawable/ic_skip_previous" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
-         </androidx.constraintlayout.widget.ConstraintLayout>
-      </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_nextSong"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:elevation="0dp"
+            app:cardBackgroundColor="@color/Replay_Blue_700"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cv_playPauseSong"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toEndOf="@+id/cv_playPauseSong"
+            app:layout_constraintTop_toTopOf="@+id/cv_playPauseSong"
+            app:layout_constraintVertical_bias="0.466">
 
-      <androidx.cardview.widget.CardView
-          android:id="@+id/cv_nextSong"
-          android:layout_width="35dp"
-          android:layout_height="35dp"
-          android:elevation="0dp"
-          app:cardBackgroundColor="@color/Replay_Blue_700"
-          app:cardCornerRadius="50dp"
-          app:layout_constraintBottom_toBottomOf="@+id/cv_playPauseSong"
-          app:layout_constraintEnd_toStartOf="@+id/guideline5"
-          app:layout_constraintStart_toEndOf="@+id/cv_playPauseSong"
-          app:layout_constraintTop_toTopOf="@+id/cv_playPauseSong"
-          app:layout_constraintVertical_bias="0.466">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp">
 
-         <androidx.constraintlayout.widget.ConstraintLayout
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:layout_margin="4dp">
+                <ImageView
+                    android:id="@+id/imageView_NextButton"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:contentDescription="@string/next_audio"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_skip_next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/ic_skip_next" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
-            <ImageView
-                android:id="@+id/imageView_NextButton"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:padding="4dp"
-                android:src="@drawable/ic_skip_next"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@drawable/ic_skip_next" />
-         </androidx.constraintlayout.widget.ConstraintLayout>
-      </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:text="|"
+            android:textColor="@color/Replay_Orange"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_playingFolderName"
+            app:layout_constraintEnd_toStartOf="@+id/tv_playingFolderName"
+            app:layout_constraintStart_toEndOf="@+id/tv_playingArtistName"
+            app:layout_constraintTop_toTopOf="@+id/tv_playingArtistName" />
 
-   </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
